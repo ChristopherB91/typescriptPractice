@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TS Test</title>
+    <style>
+      body {
+        background-color: rgb(0, 0, 0);
+      }
+      #greet-c {
+        height: 30px;
+        width: 200px;
+        left: 50%;
+        top: 50%;
+        margin-top: -15px; /* = -height / 2   */
+        margin-left: -100px; /* = -width / 2    */
+        position: fixed;
+      }
+      #greet-e {
+        height: 30px;
+        width: 200px;
+        left: 25%;
+        top: 50%;
+        margin-top: -15px; /* = -height / 2   */
+        margin-left: -100px; /* = -width / 2    */
+        position: fixed;
+      }
+      #greet-p {
+        height: 30px;
+        width: 200px;
+        left: 75%;
+        top: 50%;
+        margin-top: -15px; /* = -height / 2   */
+        margin-left: -100px; /* = -width / 2    */
+        position: fixed;
+      }
+      .contain {
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+      }
+      p{
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="greet-c" onclick="greetartist(cole)">
+      J cole greeting.
+    </button>
+    <button id="greet-p" onclick="greetartist(pac)">
+      Tupac greeting.
+    </button>
+    <button id="greet-e" onclick="greetartist(em)">
+      Eminem greeting.
+    </button>
+    <div class="contain">
+      <div id="greeting"></div>
+      <br />
+      <div id="active"></div>
+    </div>
+    <p>Copyright &copy; <span id="year"></span></p>
+  </body>
+  <script src="./js/main.js" defer></script>
+  <script src="./js/copyright.js" defer></script>
+</html>
